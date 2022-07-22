@@ -108,6 +108,16 @@
 (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
 (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
 ;; -- end --
+;; 8 mu4e
+;;(is-installed 'mu4e)
+;; -- end --
+;; 9 Git
+(is-installed 'magit)
+(is-installed 'diff-hl)
+(global-set-key (kbd "C-c m") 'magit-status)
+(setq diff-hl-fringe-bmp-function 'diff-hl-fringe-bmp-from-type)
+(global-diff-hl-mode 1)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
